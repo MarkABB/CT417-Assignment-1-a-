@@ -1,0 +1,14 @@
+name:Assigment1_CT417
+Language: java
+jdk: orcalejdk11
+type: runCI
+
+branches:
+
+build:
+    ci:
+   - mkdir -p shippable/testresults
+   - shippable_retry mvn install
+   - cp -r target shippable/codecoverage
+    
+
