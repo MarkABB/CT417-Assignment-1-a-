@@ -3,7 +3,7 @@ Language: java
 jdk: orcalejdk11
 type: runCI
 
-branches:
+branches: master
 
 build:
     ci:
